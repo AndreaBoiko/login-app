@@ -4,7 +4,7 @@ Questa applicazione è una demo front-end di autenticazione realizzata con **Rea
 
 ## Tecnologie Utilizzate
 
--  React (con Vite)
+-  React
 -  TypeScript
 -  Redux Toolkit (per la gestione dello stato)
 -  React Router DOM (per la gestione delle rotte)
