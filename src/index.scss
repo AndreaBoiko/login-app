@@ -1,0 +1,50 @@
+$primary-color: #161f27;
+$primary-color-dark: darken($primary-color, 10%);
+$input-border: #ccc;
+$background-color: #f0f2f5;
+$form-background: #fff;
+$border-radius: 8px;
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: $background-color;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  max-width: 320px;
+  margin: 100px auto;
+  padding: 20px;
+  background: $form-background;
+  border-radius: $border-radius;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  input,
+  button {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid $input-border;
+    border-radius: 4px;
+  }
+
+  button {
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover {
+      background-color: $primary-color-dark;
+    }
+  }
+}

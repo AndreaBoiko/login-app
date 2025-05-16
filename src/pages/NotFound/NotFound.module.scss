@@ -1,0 +1,26 @@
+$primary-color: #161f27;
+$primary-color-dark: darken($primary-color, 10%);
+
+.wrapper{
+    text-align: center;
+    margin-top: 100px;
+
+   button {
+    margin-top: 20px;
+    padding: 10px 30px;
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover {
+      background-color: $primary-color-dark;
+    }
+  }
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+}
