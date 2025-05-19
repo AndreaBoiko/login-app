@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Mario",
+    "surname": "Rossi",
+    "specialization": "Medico di medicina generale",
+    "email": "mario.rossi35@gmail.com",
+    "photo": "images/dottore.jpeg",
+    "city": "Milan",
+    "country": "Italy",
+    "address": "Via Livigno, 2",
+    "postCode": 20158
+  },
+  {
+    "id": 2,
+    "name": "Riccardo",
+    "surname": "Capucci",
+    "specialization": "Medico di medicina generale",
+    "email": "riccardo.capucci@gmail.com",
+    "photo": "images/dottore2.jpeg",
+    "city": "Milan",
+    "country": "Italy",
+    "address": "Via Emilio Bignami, 8/1",
+    "postCode": 20126
+  },
+  {
+    "id": 3,
+    "name": "Vincenzo",
+    "surname": "Chiodini",
+    "specialization": "Cardiologo",
+    "email": "vincenzo.chiodi@gmail.com",
+    "photo": "images/dottore3.jpg",
+    "city": "Torino",
+    "country": "Italy",
+    "address": "Via Padova, 24",
+    "postCode": 20127
+  },
+  {
+    "id": 4,
+    "name": "Marco",
+    "surname": "Chianelli",
+    "specialization": "Endocrinologo",
+    "email": "marco.chianelli@gmail.com",
+    "photo": "images/user1.jpg",
+    "city": "Milan",
+    "country": "Italy",
+    "address": "Via Montenapoleone, 12",
+    "postCode": 20118
+  }
+]

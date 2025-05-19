@@ -16,7 +16,7 @@ const AuthGuard = ({ children, requireAuth }: Props) => {
   }
 
   if (!requireAuth && token) {
-    return <Navigate to="/protected" replace />;
+    return <Navigate to="/home" replace />;
   }
 
   return children;

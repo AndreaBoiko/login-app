@@ -1,0 +1,64 @@
+@import '../../styles/variables.scss';
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  h2 {
+    text-align: center;
+    margin: $padding-el 0;
+  }
+}
+
+.content {
+    display: flex;
+    gap: $padding-card;
+}
+
+.card {
+  background-color: $form-background;
+  padding: $padding-card;
+  border-radius: $br-form;
+  box-shadow: $box-shadow;
+  display: flex;
+  gap: $padding-card;
+  width: fit-content;
+  max-width: 100%;
+
+  h3 {
+    margin-bottom: $padding-card;
+  }
+}
+
+.image {
+  img {
+    max-width: 250px;
+    border-radius: $br-form;
+  }
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: $padding-button;
+    span {
+        font-weight: 600;
+        color: rgb(53, 53, 53);
+    }
+}
+
+.modify {
+    button {
+        background-color: transparent;
+        border: none;
+
+        &:hover {
+            cursor: pointer;
+        }
+        
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+}

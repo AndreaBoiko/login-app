@@ -1,0 +1,78 @@
+@import '../../styles/variables.scss';
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: $padding-el;
+  position: relative;
+
+  h2 {
+    text-align: center;
+    margin-bottom: $padding-el;
+  }
+
+  button {
+    position: absolute;
+    top: $padding-card;
+    right: $padding-card;
+    padding: $padding-button $padding-card;
+    background-color: $button-color;
+    color: $form-background;
+    border: none;
+    border-radius: $br-button;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover {
+      background-color: $button-hover;
+    }
+  }
+}
+
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: $padding-card;
+  margin-top: $padding-card;
+}
+
+.card {
+  max-width: 250px;
+  padding: $padding-card;
+  border-radius: $br-form;
+  box-shadow: $box-shadow;
+  background-color: $form-background;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+
+  p {
+    align-self: flex-start;
+  }
+
+  span {
+    height: 1px;
+    width: 100%;
+    background-color: $button-hover;
+    margin-bottom: $padding-card;
+  }
+}
+
+.image {
+  width: 150px;          
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;        
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;   
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+  }
+}

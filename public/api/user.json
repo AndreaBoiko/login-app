@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "name": "Andrii",
+    "surname": "Boiko",
+    "email": "andriy.boyko35@gmail.com",
+    "password": "123456qw",
+    "photo": "images/user1.jpg",
+    "birthDate": "12/12/2000",
+    "city": "Milan",
+    "country": "Italy",
+    "residence": "Via Emilio Bignami, 8/1",
+    "doctor": "Mario Rossi"
+  },
+  {
+    "id": 2,
+    "name": "Andrii",
+    "surname": "Rossi",
+    "email": "andriy.rossi35@gmail.com",
+    "password": "1234567qw",
+    "photo": "images/user1.jpg",
+    "birthDate": "12/12/2000",
+    "city": "Milan",
+    "country": "Italy",
+    "residence": "Via Emilio Bignami, 8/1",
+    "doctor": "Mario Rossi"
+  },
+  {
+    "id": 3,
+    "name": "Mario",
+    "surname": "Boiko",
+    "email": "mario.boyko35@gmail.com",
+    "password": "1234568qw",
+    "photo": "images/user1.jpg",
+    "birthDate": "12/12/2000",
+    "city": "Milan",
+    "country": "Italy",
+    "residence": "Via Emilio Bignami, 8/1",
+    "doctor": "Mario Rossi"
+  },
+  {
+    "id": 4,
+    "name": "Andrii",
+    "surname": "Boiko",
+    "email": "andriy.boyko37@gmail.com",
+    "password": "1234569qw",
+    "photo": "images/user1.jpg",
+    "birthDate": "12/12/2000",
+    "city": "Milan",
+    "country": "Italy",
+    "residence": "Via Emilio Bignami, 8/1",
+    "doctor": "Mario Rossi"
+  }
+]

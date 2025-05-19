@@ -1,26 +1,26 @@
-$primary-color: #161f27;
-$primary-color-dark: darken($primary-color, 10%);
+@import '../../styles/variables.scss';
 
 .wrapper{
     text-align: center;
     margin-top: 100px;
 
    button {
-    margin-top: 20px;
-    padding: 10px 30px;
-    background-color: $primary-color;
-    color: white;
+    margin-top: $padding-card;
+    padding: $padding-button $padding-card;
+    background-color: $button-color;
+    color: $form-background;
     border: none;
+    border-radius: $br-button;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
 
     &:hover {
-      background-color: $primary-color-dark;
+      background-color: $button-hover;
     }
   }
 
     a{
         text-decoration: none;
-        color: white;
+        color: $form-background;
     }
 }

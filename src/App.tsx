@@ -1,8 +1,12 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
-import LoginPage from './pages/LoginPage/LoginPage';
-import ProtectedPage from './pages/ProdectedPage/ProtectedPage';
-import NotFound from './pages/NotFound/NotFound';
 import AuthGuard from './components/AuthGuard';
+import MainLayout from './MainLayout';
+import LoginPage from './pages/LoginPage/LoginPage';
+import UserPage from './pages/UserPage/UserPage';
+import NotFound from './pages/NotFound/NotFound';
+import AboutPage from './pages/AboutPage/AboutPage';
+import EditProfilePage from './pages/EditProfilePage/EditProfilePage';
+import HomePage from './pages/HomePage/HomePage';
 
 const App = () => {
   return (
@@ -17,13 +21,17 @@ const App = () => {
         }
       />
       <Route
-        path="/protected"
         element={
           <AuthGuard requireAuth={true}>
-            <ProtectedPage />
+            <MainLayout />
           </AuthGuard>
-        }
-      />
+        }>
+        <Route path="/" element={<Navigate to="/home" replace />} />
+        <Route path="/home" element={<HomePage />} />
+        <Route path="/profile" element={<UserPage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/edit-profile" element={<EditProfilePage />} />
+      </Route>
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

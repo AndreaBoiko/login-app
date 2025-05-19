@@ -1,0 +1,22 @@
+@import '../../styles/variables.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: $padding-card;
+  input {
+    padding: $padding-button;
+  }
+}
+
+.filter {
+  display: flex;
+  gap: $padding-card;
+  select {
+    padding: $padding-button $padding-card;
+    border: 1px solid blue($color: #000000);
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

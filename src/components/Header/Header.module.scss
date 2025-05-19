@@ -1,0 +1,69 @@
+@import '../../styles/variables.scss';
+
+.header {
+    width: 100%;
+    box-sizing: border-box;
+    height: $padding-el;
+    background-color: $form-background;
+    display: flex;
+    justify-content: center;
+    padding: 0 $padding-el;
+}
+
+.wrapper {
+    flex-grow: 1;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  ul {
+    display: flex;
+    gap: $padding-el;
+    li {
+      display: flex;
+      position: relative;
+      align-items: center;
+      height: $padding-el;
+    }
+  }
+}
+
+.link {
+  color: $button-hover;
+  text-decoration: none;
+}
+
+.link_active {
+  color: $button-color;
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background-color: $button-color;
+    border-radius: 2px;
+  }
+}
+
+.logout {
+    padding: $padding-button $padding-card;
+    height: auto;
+    background-color: $button-color;
+    color: $form-background;
+    border: none;
+    border-radius: $br-button;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover {
+      background-color: $button-hover;
+    }
+}

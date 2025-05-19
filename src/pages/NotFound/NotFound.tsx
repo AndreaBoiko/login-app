@@ -6,7 +6,7 @@ const NotFound = () => {
     <div className={styles.wrapper}>
       <h1>404</h1>
       <p>Page not found</p>
-      <button><Link to="/protected">Back to home page</Link></button>
+      <button><Link to="/home">Back to home page</Link></button>
     </div>
   );
 };
